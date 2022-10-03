@@ -1,0 +1,51 @@
+<div class="ticket">
+    <div class="container1">
+      <div class="box1">
+        <p id="departure">DEPARTURE</p>
+        <p id="duration">DURATION</p>
+        <p id="arrival">ARRIVAL</p>
+        <p id="price">PRICE</p>
+      </div>
+      <div class="box2" *ngFor="let item of data" >
+        <div class="column1">
+          <div class="type">
+            <!-- <img src="/src/assets/images/spiceJet.png" alt="Icon" /> -->
+            <span id="name">{{item.airline}}</span>
+          </div>
+          <div class="location1">
+            <p class="place">
+              <strong class="abbv">{{item.shortHandDeparture}}</strong><span>{{item.departure}}</span>
+            </p>
+          </div>
+          <div class="time1"><strong>{{item.departureTime}}</strong></div>
+          <div class="refundstatus">
+            <p>Partially Refundable</p>
+          </div>
+        </div>
+        <div class="column2">
+          <p class="time"><strong>{{item.duration}}</strong></p>
+        </div>
+        <div class="column3">
+          <div class="location2">
+            <p class="place">
+              <strong class="abbv">{{item.shortHandArrival}}</strong><span>{{item.arrival}}</span>
+            </p>
+          </div>
+          <div class="time2"><strong>{{item.departureTime}}</strong></div>
+        </div>
+        <div class="column4">
+          <p class="price"><b>₹{{item.Price}}</b></p>
+          <p class="emi"><span>No cost EMI from </span><strong>₹{{item.emi}}</strong></p>
+        </div>
+        <div class="column5">
+          
+          <a routerLink="/pay/{{item.airline}}">
+            <button>Book</button>
+          </a>
+          <select name="flights" id="flightdetails">
+            <option value="something">flight details</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>

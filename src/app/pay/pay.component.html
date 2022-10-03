@@ -1,0 +1,26 @@
+<h1>Please pay to book your ticket</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">airline</th>
+        <th scope="col">departure</th>
+        <th scope="col">arrival</th>
+        <th scope="col">duration</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>{{flight.airline}}</td>
+        <td>{{flight.departure}}</td>
+        <td>{{flight.arrival}}</td>
+        <td>{{flight.duration}}</td>
+        <td>₹{{flight.Price}}</td>
+      </tr>
+    </tbody>
+
+    <button (click)="pay()" style="margin:15px 15px 15px 15px;" type="button" class="btn btn-primary">PAY NOW</button>
+  </table>

@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Flight Login</h1>
+                    <hr>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="logIn()">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Username</label>
+                        <input formControlName="name" type="name" placeholder="Enter your name" class="form-control"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <span style="color: red;" *ngIf="name && name.invalid && name.touched">OOPS! It's an invalid email</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input formControlName="password" type="password" placeholder="Enter your password"
+                            class="form-control" id="exampleInputPassword1">
+
+                            <span style="color: red;" *ngIf="password && password.invalid && password.touched">OOPS! It'a wrong password</span>
+
+                    </div>
+
+                    <button [disabled]="loginForm.invalid" type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

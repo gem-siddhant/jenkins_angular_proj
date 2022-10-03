@@ -1,0 +1,129 @@
+body {
+    background-color: azure;
+    box-sizing: border-box;
+  }
+  .ticket {
+    padding: 15px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #c4ddff;
+    height: 22%;
+    width: 70%;
+    float: left;
+  }
+  .box1,
+  .box2 {
+    display: flex;
+    align-items: center;
+  }
+  .box1 {
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    justify-content: space-around;
+  }
+  .box1 p {
+      font-size: 16px;
+      font-weight: 550;
+  }
+  #departure{
+      position: relative;
+      right:60px
+  }
+  #duration{
+      position: relative;
+      right:100px
+  }
+  #arrival{
+      position:relative;
+      right:140px;
+  }
+  #price{
+      position: relative;
+      right: 150px;
+      color:#646FD4;
+  }
+  .column3{
+      position: relative;
+      left:30px;
+  }
+  .column4{
+      position: relative;
+      left: 10px;
+      top:40px;
+  }
+  .price{
+      position: relative;
+      left:90px
+  }
+  .time, .time2, .time1,.price {
+      font-size: 18px;
+  }
+  .time2 {
+      position: relative;
+      left: 30px;
+  }
+  .emi{
+      position: inherit;
+      font-size: smaller;
+      bottom: 15px;
+  }
+  .time{
+      position: relative;
+      top: 23px
+  }
+  img{
+      width: 45px;
+      height: 45px;
+  }
+  .box2 {
+      padding-top: 15px;
+    background-color: aliceblue;
+    justify-content: space-around;
+    border-radius: 8px;
+  }
+  span{
+      color: #9254C8;
+  }
+  #name{
+      margin-left: 5px;
+  }
+  strong{
+      margin: 10px;
+  }
+  .abbv{
+      position: relative;
+      right:10px;
+      font-size: smaller;
+  }
+  .abbv span {
+      font-size: 12px;
+  }
+  button{
+      box-shadow: none;
+      font-size: 16px;
+      font-weight: 500;
+      background-color: orangered;
+      color: white;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-radius: 4px;
+      border-color: orangered;
+  }
+  select{
+      position: relative;
+      top: 30px;
+      color: blue;
+      background-color: transparent;
+      border: hidden;
+  }
+  select:active{
+  border: hidden;
+  background-color: transparent;
+  }
+  .refundstatus{
+      color: #646FD4;
+  }
+  .column5{
+      display: grid;
+  }
